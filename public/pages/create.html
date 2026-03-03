@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Resume - AI Resume Builder</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">🚀 AI Resume Builder</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/create">Create</a></li>
+                <li><a href="/improve">Improve</a></li>
+                <li><a href="/search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Create Your Resume</h2>
+            
+            <div id="formContainer">
+                <form onsubmit="submitCreateForm(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 8900">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Current/Target Role *</label>
+                        <input type="text" id="role" name="role" required placeholder="Software Engineer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Current/Previous Company</label>
+                        <input type="text" id="company" name="company" placeholder="Tech Corp">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Professional Experience *</label>
+                        <textarea id="experience" name="experience" required 
+                                  placeholder="Describe your work experience, responsibilities, and achievements..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Education *</label>
+                        <input type="text" id="education" name="education" required 
+                               placeholder="Bachelor's in Computer Science">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="institution">Educational Institution</label>
+                        <input type="text" id="institution" name="institution" placeholder="University Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skills">Skills (comma-separated) *</label>
+                        <input type="text" id="skills" name="skills" required 
+                               placeholder="JavaScript, Python, React, Node.js">
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn">Generate Resume with AI</button>
+                        <a href="/" class="btn btn-secondary" style="margin-left: 1rem;">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Builder - Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="logo">🚀 AI Resume Builder</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/create">Create</a></li>
+                <li><a href="/improve">Improve</a></li>
+                <li><a href="/search">Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Build Your Perfect Resume with AI</h1>
+            <p>Create professional resumes or enhance existing ones using advanced AI technology</p>
+        </div>
+
+        <div class="options-grid">
+            <div class="option-card" onclick="window.location.href='/create'">
+                <div class="option-icon">📝</div>
+                <h3>Create New Resume</h3>
+                <p>Start from scratch and build a professional resume with AI assistance</p>
+                <a href="/create" class="btn">Get Started</a>
+            </div>
+
+            <div class="option-card" onclick="window.location.href='/improve'">
+                <div class="option-icon">✨</div>
+                <h3>Improve Existing Resume</h3>
+                <p>Enhance your current resume with AI-powered suggestions</p>
+                <a href="/improve" class="btn">Improve Now</a>
+            </div>
+
+            <div class="option-card" onclick="window.location.href='/search'">
+                <div class="option-icon">🔍</div>
+                <h3>View All Resumes</h3>
+                <p>Search and browse through all created resumes</p>
+                <a href="/search" class="btn">Browse</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
